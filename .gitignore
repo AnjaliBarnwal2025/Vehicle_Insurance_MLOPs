@@ -225,3 +225,10 @@ crashcourse.txt
 
 ## My credentitals
 atlas-credentials.env
+
+# My credentials
+atlas-credentials.env
+
+# MongoDB demo notebook
+notebook/mongoDB_demo.ipynb
+mongoDB_demo.ipynb
