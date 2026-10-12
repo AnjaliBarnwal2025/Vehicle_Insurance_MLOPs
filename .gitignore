@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+## My reference files
+projectflow.txt
+crashcourse.txt
+
+## My credentitals
+atlas-credentials.env
