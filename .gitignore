@@ -226,5 +226,4 @@ crashcourse.txt
 ## My credentitals
 atlas-credentials.env
 
-# My credentials
-atlas-credentials.env
+artifact/
