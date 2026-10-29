@@ -48,9 +48,14 @@ class ModelTrainerConfig:
                                                 MODEL_TRAINER_TRAINED_MODEL_NAME)
     expected_accuracy: float = MODEL_TRAINER_EXPECTED_SCORE
     model_config_file_path: str = MODEL_TRAINER_MODEL_CONFIG_FILE_PATH
-    _n_estimators=MODEL_TRAINER_N_ESTIMATORS
-    _min_samples_split=MODEL_TRAINER_MIN_SAMPLES_SPLIT
-    _min_samples_leaf=MODEL_TRAINER_MIN_SAMPLES_LEAF
-    _max_depth=MIN_SAMPLES_SPLIT_MAX_DEPTH
-    _criterion=MIN_SAMPLES_SPLIT_CRITERION
-    _random_state=MIN_SAMPLES_SPLIT_RANDOM_STATE
+
+@dataclass
+class ModelEvaluationconfig:
+    changed_threshold_score: float = MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE
+    bucket_name: str = MODEL_BUCKET_NAME
+    s3_model_key_path: str = MODEL_FILE_NAME
+
+@dataclass
+class ModelPusherConfig:
+    bucket_name: str = MODEL_BUCKET_NAME
+    s3_model_key_path: str = MODEL_FILE_NAME
